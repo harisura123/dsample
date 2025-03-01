@@ -10,7 +10,7 @@ function Signup() {
     axios.defaults.withCredentials = true;
     const onSign = event => {
         event.preventDefault()
-        axios.post('http://localhost:3002/register', {username, email, password})
+        axios.post('https://dsample-api.vercel.app/register', {username, email, password})
         .then(result => {console.log(result)
             navigate('/login')
         })
