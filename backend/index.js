@@ -5,7 +5,7 @@ const MongodbLogin =  require('./models/login')
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ["http://localhost:3002/"],
+    origin: [""],
     methods: ["POST", "GET"],
     credentials: true
 }))
