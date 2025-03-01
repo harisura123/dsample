@@ -5,7 +5,7 @@ const MongodbLogin =  require('./models/login')
 const app = express()
 app.use(express.json())
 app.use(cors({
-    origin: ["https://dsample.vercel.app/"],
+    origin: ["https://dsample.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true
 }))
