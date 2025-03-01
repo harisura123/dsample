@@ -10,7 +10,7 @@ function Login() {
     axios.defaults.withCredentials = true;
     const onLogin = e => {
         e.preventDefault()
-        axios.post('http://localhost:3002/login', {username, password})
+        axios.post('https://dsample-api.vercel.app/login', {username, password})
         .then(result => {
             console.log(result.data)
             if (result.data === 'Success'){
